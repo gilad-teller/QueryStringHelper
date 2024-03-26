@@ -3,6 +3,28 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <Title>Query String Helper</Title>
+    <Authors>Gilad Teller</Authors>
+    <Product>$(AssemblyName)</Product>
+    <Description>C# Helper library for building query string</Description>
+    <PackageProjectUrl>https://github.com/gilad-teller/QueryStringHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gilad-teller/QueryStringHelper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Uri;Url;UriBuilder;Query;Query String;Uri Builder</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyVersion></AssemblyVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
