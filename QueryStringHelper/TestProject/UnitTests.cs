@@ -94,6 +94,18 @@ namespace TestProject
         }
 
         [Fact]
+        public void DuplicateKeyTest()
+        {
+            List<KeyValuePair<string, string>> parameters = new()
+            {
+                new KeyValuePair<string, string>("a", "1"),
+                new KeyValuePair<string, string>("a", "2")
+            };
+            string queryString = QueryStringHelper.BuildQueryString(parameters);
+            Assert.Equal("a=1&a=2", queryString);
+        }
+
+        [Fact]
         public void UriBuilderTest()
         {
             Dictionary<string, string> parameters = new()

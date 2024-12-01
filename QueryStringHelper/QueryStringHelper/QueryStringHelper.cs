@@ -28,7 +28,7 @@ namespace Net.TellerApps.QueryStringHelper
                 {
                     throw new ArgumentNullException(nameof(kvp.Key), "Key cannot be null");
                 }
-                nameValueCollection[kvp.Key.ToString()] = kvp.Value?.ToString() ?? string.Empty;
+                nameValueCollection.Add(kvp.Key.ToString(), kvp.Value?.ToString() ?? string.Empty);
             }
             return nameValueCollection.ToString();
         }
